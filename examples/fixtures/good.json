@@ -1,0 +1,1 @@
+{"event":"lead.created","payload":{"id":42,"email":"demo@example.com","tags":["new"]}}
