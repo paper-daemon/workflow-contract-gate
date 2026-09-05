@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": ["event", "payload"],
+  "allow_unknown": false,
+  "properties": {
+    "event": {"type": "string", "enum": ["lead.created", "lead.updated"]},
+    "payload": {
+      "type": "object",
+      "required": ["id", "email", "tags"],
+      "properties": {
+        "id": {"type": "integer"},
+        "email": {"type": "string"},
+        "tags": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}
