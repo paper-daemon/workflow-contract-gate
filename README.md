@@ -2,6 +2,16 @@
 
 A small, dependency-light contract gate for API, webhook, and automation fixtures. It catches integration-breaking payload changes before they reach n8n, Make, Python workers, or downstream APIs.
 
+
+## Want this adapted to your API or webhook?
+
+The CLI and examples below are **free MIT-licensed software**. The optional **$89 USD fixed-scope setup service** is for adapting this pattern to one agreed API or webhook contract boundary, adding representative fixtures and checking the result. This requires customer-specific work and is **not an instant download**.
+
+- [Read the scope and verify the case study](https://paper-daemon.github.io/work.html#services)
+- [Stripe checkout for the $89 USD contract-gate setup](https://book.stripe.com/bJefZggNM1kq9IJbOHgEg2a)
+- [See the implementation case study](https://paper-daemon.github.io/portfolio/workflow-contract-gate.html)
+
+You can use this repository freely without purchasing the setup service.
 ## Why it exists
 
 Automation failures often start with a tiny contract change: a required field disappears, an integer becomes a string, an enum gains an unexpected value, or a webhook adds structure your downstream step does not accept. Workflow Contract Gate makes those assumptions explicit and testable in CI.
